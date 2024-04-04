@@ -1,3 +1,4 @@
+import datetime
 from talon import Context, Module, actions, app
 
 is_mac = app.platform == "mac"
@@ -65,4 +66,21 @@ class AppActions:
     def scroll_up(repeat: int):
         for i in range(repeat):
             actions.user.vscode("extension.smoothscroll_scrollUp")
+
+@mod.action_class
+class AppActions:
+    def lookup_daily_note():
+        """
+        Navigate to the daily note for today
+        """
+        # note format: "work.journal.2024-01-01"
+        # Opened the lookup view with dendron.lookupNote
+        actions.user.vscode("dendron.lookupNote")
+        actions.sleep("100ms")
+        date = datetime.datetime.now().strftime("%Y-%m-%d")
+        actions.insert("work.journal." + date)
+        actions.sleep("500ms")
+        actions.key("enter")
+
+
             

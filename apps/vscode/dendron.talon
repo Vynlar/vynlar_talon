@@ -1,7 +1,7 @@
 #custom vscode commands go here
 app: vscode
 # Only enable it if the window title contains "dendron"
-# win.title: /dendron/
+win.title: /dendron/
 -
 
 lookup:                     user.vscode("dendron.lookupNote")
@@ -18,6 +18,7 @@ note lock:                  user.vscode("dendron.togglePreviewLock")
 note preview:               user.vscode("dendron.togglePreview")
 note rename:                user.vscode("dendron.renameNote")
 note delete:                user.vscode("dendron.delete")
+note daily:                 user.lookup_daily_note()
 wiki link:                  user.vscode("dendron.insertWikiLink")
 
 bar notes:                  user.vscode("workbench.view.extension.dendron-view")
