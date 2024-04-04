@@ -1,0 +1,21 @@
+{
+  "call": {
+    "definitions": [
+      {
+        "scope": {
+          "langIds": [
+            "typescriptreact", "typescript"
+          ]
+        },
+        "body": [
+          "$function($callee)"
+        ]
+      }
+    ],
+    "description": "",
+    "variables": {
+      "function": {},
+      "callee": {}
+    }
+  }
+}

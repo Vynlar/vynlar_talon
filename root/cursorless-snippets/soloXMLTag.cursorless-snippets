@@ -1,0 +1,24 @@
+{
+  "soloXMLTag": {
+    "definitions": [
+      {
+        "scope": {
+          "langIds": [
+            "typescriptreact",
+            "typescript"
+          ]
+        },
+        "body": [
+          "<$tagName $attributes />"
+        ]
+      }
+    ],
+    "description": "A self closing tag",
+    "variables": {
+      "tagName": {
+        "formatter": "pascalCase"
+      },
+      "attributes": {}
+    }
+  }
+}

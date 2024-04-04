@@ -1,0 +1,24 @@
+{
+  "describeBlock": {
+    "definitions": [
+      {
+        "scope": {
+          "langIds": [
+            "typescriptreact",
+            "typescript"
+          ]
+        },
+        "body": [
+          "describe('$name', () => {",
+          "\t$body",
+          "})"
+        ]
+      }
+    ],
+    "description": "A test describe block",
+    "variables": {
+      "name": {},
+      "body": {}
+    }
+  }
+}

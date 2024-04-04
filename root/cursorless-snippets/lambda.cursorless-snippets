@@ -1,0 +1,23 @@
+{
+  "lambda": {
+    "definitions": [
+      {
+        "scope": {
+          "langIds": [
+            "typescriptreact", "typescript"
+          ]
+        },
+        "body": [
+          "($arguments) => {",
+          "\t$body",
+          "}"
+        ]
+      }
+    ],
+    "description": "",
+    "variables": {
+      "arguments": {},
+      "body": {}
+    }
+  }
+}

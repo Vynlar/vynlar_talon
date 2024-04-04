@@ -1,0 +1,25 @@
+{
+  "xmlTag": {
+    "definitions": [
+      {
+        "scope": {
+          "langIds": [
+            "typescriptreact",
+            "typescript"
+          ]
+        },
+        "body": [
+          "<$tagName>$body</$tagName>"
+        ]
+      }
+    ],
+    "description": "A tag with children",
+    "variables": {
+      "tagName": {
+        "formatter": "pascalCase" 
+      },
+      "body": {}
+    },
+    "insertionScopeTypes": ["xmlElement"]
+  }
+}

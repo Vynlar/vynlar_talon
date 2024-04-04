@@ -1,0 +1,31 @@
+{
+  "reactComponent": {
+    "definitions": [
+      {
+        "scope": {
+          "langIds": [
+            "typescriptreact"
+          ]
+        },
+        "body": [
+          "interface ${name}Props {",
+          "\t",
+          "}",
+          "",
+          "const ${name} = (props: ${name}Props) => {",
+          "\treturn (",
+          "\t\t$body",
+          "\t)",
+          "}"
+        ]
+      }
+    ],
+    "description": "A react component with typescript type",
+    "variables": {
+      "body": {},
+      "name": {
+        "formatter": "pascalCase"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+Spoken form, Cursorless identifier
+funk, functionDeclaration.name
+link, link.text
+tag, xmlTag.tagName
+solo tag, soloXMLTag.tagName
+component, reactComponent.name
+describe, describeBlock.name
+test, itBlock.name
