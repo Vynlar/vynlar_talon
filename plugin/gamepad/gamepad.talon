@@ -1,8 +1,8 @@
-gamepad(l1:down):
+gamepad(dpad_down:down):
     # enable eye tracking
     tracking.control_toggle()
 
-gamepad(l1:up):
+gamepad(dpad_down:up):
     # enable eye tracking
     tracking.control_toggle()
 
