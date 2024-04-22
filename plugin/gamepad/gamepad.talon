@@ -11,3 +11,6 @@ gamepad(l2:repeat):
 
 gamepad(r2:repeat):
     user.mouse_scroll_down(value * 0.3)
+
+gamepad(south:down):
+    mouse_click(0)
