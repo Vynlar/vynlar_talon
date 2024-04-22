@@ -7,4 +7,7 @@ gamepad(l1:up):
     tracking.control_toggle()
 
 gamepad(l2:change):
-    # 
+    user.mouse_scroll_up(value)
+
+gamepad(r2:change):
+    user.mouse_scroll_down(value)
