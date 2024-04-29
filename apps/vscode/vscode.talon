@@ -21,6 +21,9 @@ scout all [<user.text>]:
     sleep(50ms)
     insert(text or "")
 
+file hunt:
+    user.vscode("find-it-faster.findFiles")
+
 # Workspaces
 project open:               key("cmd-o")
 project open recent:        user.vscode("workbench.action.openRecent")
