@@ -24,6 +24,9 @@ scout all [<user.text>]:
 file hunt:
     user.vscode("find-it-faster.findFiles")
 
+hunt all:
+    user.vscode("find-it-faster.findWithinFiles")
+
 # Workspaces
 project open:               key("cmd-o")
 project open recent:        user.vscode("workbench.action.openRecent")
