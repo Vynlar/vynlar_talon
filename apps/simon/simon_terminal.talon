@@ -47,3 +47,7 @@ start playwright [local]:
 start storybook:
     insert("npm run storybook")
     key(enter)
+
+start colima:
+    insert("colima start --memory 10 --cpu 3 --vm-type vz --mount-type virtiofs")
+    key(enter)

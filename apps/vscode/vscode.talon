@@ -3,7 +3,7 @@ mode: command
 -
 
 bar GitHub:                 user.vscode("pr:github.focus")
-bar copilot:                user.vscode("workbench.panel.chat.view.copilot.focus")
+bar copilot:                user.vscode("a.panel.chat.view.copilot.focus")
 
 # Symbol search
 symbol hunt [<user.text>]:
@@ -20,6 +20,12 @@ scout all [<user.text>]:
     user.vscode("workbench.action.findInFiles")
     sleep(50ms)
     insert(text or "")
+
+file hunt:
+    user.vscode("find-it-faster.findFiles")
+
+hunt all:
+    user.vscode("find-it-faster.findWithinFiles")
 
 # Workspaces
 project open:               key("cmd-o")
@@ -63,3 +69,6 @@ advise:                     key("ctrl-space")
 next:
     key("escape")
     key("tab")
+
+search next:                user.vscode("search.action.focusNextSearchResult")
+search (previous|last):     user.vscode("search.action.focusPreviousSearchResult")
