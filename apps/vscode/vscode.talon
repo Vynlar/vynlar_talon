@@ -2,8 +2,8 @@ app: vscode
 mode: command
 -
 
-bar GitHub:                 user.vscode("pr:github.focus")
-bar copilot:                user.vscode("a.panel.chat.view.copilot.focus")
+bar GitHub: user.vscode("pr:github.focus")
+bar copilot: user.vscode("a.panel.chat.view.copilot.focus")
 
 # Symbol search
 symbol hunt [<user.text>]:
@@ -28,47 +28,59 @@ hunt all:
     user.vscode("find-it-faster.findWithinFiles")
 
 # Workspaces
-project open:               key("cmd-o")
-project open recent:        user.vscode("workbench.action.openRecent")
+project open: key("cmd-o")
+project open recent: user   .vscode("workbench.action.openRecent")
 
-close tabs right:           user.vscode("workbench.action.closeEditorsToTheRight")
-close tabs left:            user.vscode("workbench.action.closeEditorsToTheLeft")
-close tab force:            user.vscode("workbench.action.revertAndCloseActiveEditor")
-tab close force:            user.vscode("workbench.action.revertAndCloseActiveEditor")
-tab move next:              user.vscode("workbench.action.moveEditorToNextGroup")
-tab move (previous|last):   user.vscode("workbench.action.moveEditorToPreviousGroup")
-tab move first:             user.vscode("workbench.action.moveEditorToFirstGroup")
-tab move last:              user.vscode("workbench.action.moveEditorToLastGroup")
-tab hunt:                   user.vscode("workbench.action.showAllEditors")
+close tabs right: user.vscode("workbench.action.closeEditorsToTheRight")
+close tabs left: user.vscode("workbench.action.closeEditorsToTheLeft")
+close tab force: user.vscode("workbench.action.revertAndCloseActiveEditor")
+tab close force: user.vscode("workbench.action.revertAndCloseActiveEditor")
+tab move next: user.vscode("workbench.action.moveEditorToNextGroup")
+tab move (previous | last): user.vscode("workbench.action.moveEditorToPreviousGroup")
+tab move first: user.vscode("workbench.action.moveEditorToFirstGroup")
+tab move last: user.vscode("workbench.action.moveEditorToLastGroup")
+tab hunt: user.vscode("workbench.action.showAllEditors")
 
 # GitHub
 diff next:
     key(alt-f5)
 
-diff previous:
+diff last:
     key(shift-alt-f5)
 
-diff comment:               user.vscode("pr.addFileComment")
+problem next:
+    user.run_rpc_command("editor.action.marker.next")
+
+problem next all:
+    user.run_rpc_command("editor.action.marker.nextInFiles")
+
+problem last:
+    user.run_rpc_command("editor.action.marker.prev")
+
+diff comment: user.vscode("pr.addFileComment")
 slot {self.letter} [{self.letter}]:
     user.run_rpc_command("andreas.focusTab", "{letter_1}{letter_2 or ''}")
 
-downer:                     user.vscode("extension.smoothscroll_scrollDown")
-upper:                      user.vscode("extension.smoothscroll_scrollUp")
+downer: user.vscode("extension.smoothscroll_scrollDown")
+upper: user.vscode("extension.smoothscroll_scrollUp")
 
 # merge conflicts
-accept incoming:            user.vscode("merge-conflict.accept.incoming")
-accept both:                user.vscode("merge-conflict.accept.both")
-accept current:             user.vscode("merge-conflict.accept.current")
-accept all current:         user.vscode("merge-conflict.accept.all-current")
-accept all incoming:        user.vscode("merge-conflict.accept.all-incoming")
-conflict next:              user.vscode("merge-conflict.next")
-conflict previous:          user.vscode("merge-conflict.previous")
+accept incoming: user.vscode("merge-conflict.accept.incoming")
+accept both: user.vscode("merge-conflict.accept.both")
+accept current: user.vscode("merge-conflict.accept.current")
+accept all current: user.vscode("merge-conflict.accept.all-current")
+accept all incoming: user.vscode("merge-conflict.accept.all-incoming")
+conflict next: user.vscode("merge-conflict.next")
+conflict previous: user.vscode("merge-conflict.previous")
 
-yes:                        key("tab")
-advise:                     key("ctrl-space")
+yes: key("tab")
+advise: key("ctrl-space")
 next:
     key("escape")
     key("tab")
 
-search next:                user.vscode("search.action.focusNextSearchResult")
-search (previous|last):     user.vscode("search.action.focusPreviousSearchResult")
+search next: user.vscode("search.action.focusNextSearchResult")
+search (previous | last): user.vscode("search.action.focusPreviousSearchResult")
+
+# Swap between the visible tabs
+swapper: user.vscode("workbench.action.focusNextGroup")

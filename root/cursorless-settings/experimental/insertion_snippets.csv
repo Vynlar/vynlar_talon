@@ -9,3 +9,4 @@ lambda,lambda
 component,reactComponent
 describe, describeBlock
 test, itBlock
+task,task

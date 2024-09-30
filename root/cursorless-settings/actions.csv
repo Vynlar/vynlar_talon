@@ -56,3 +56,6 @@ wrap, wrapWithPairedDelimiter
 # 2024-03-30 12:30:19 - New entries automatically added by cursorless
 decrement, decrement
 increment, increment
+
+# 2024-08-15 10:36:16 - New entries automatically added by cursorless
+follow split, followLinkAside

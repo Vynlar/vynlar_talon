@@ -1,0 +1,17 @@
+{
+  "task": {
+    "definitions": [
+      {
+        "scope": {
+          "langIds": [
+            "markdown"
+          ]
+        },
+        "body": [
+          "- [ ] "
+        ]
+      }
+    ],
+    "description": "Markdown task"
+  }
+}
