@@ -1,11 +1,11 @@
 os: mac
 app: slack
 -
-go channel <user.text>:
+channel hunt <user.text>:
     key(cmd-k)
     sleep(200ms)
     insert("{text}")
-go channel <user.text> clap:
+go channel <user.text>:
     key(cmd-k)
     sleep(200ms)
     insert("{text}")
