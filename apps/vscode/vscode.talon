@@ -45,6 +45,9 @@ tab hunt: user.vscode("workbench.action.showAllEditors")
 diff next:
     key(alt-f5)
 
+diff next all:
+    key(shift-alt-f5)
+
 diff last:
     key(shift-alt-f5)
 
