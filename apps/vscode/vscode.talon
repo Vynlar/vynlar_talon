@@ -60,6 +60,7 @@ git diff:
 
 (wreck | rec) make: user.vscode("pr.create")
 (wreck | rec) show: user.vscode("prStatus:github.focus")
+(wreck | rec) diff: user.vscode("pr.openDiffView")
 (wreck | rec) next: user.vscode("pr.goToNextDiffInPr")
 (wreck | rec) last: user.vscode("pr.goToPreviousDiffInPr")
 (wreck | rec) (scene | seen): user.vscode_and_wait("pr.markFileAsViewed")
