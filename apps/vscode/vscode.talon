@@ -42,7 +42,7 @@ tab move last: user.vscode("workbench.action.moveEditorToLastGroup")
 tab hunt: user.vscode("workbench.action.showAllEditors")
 
 # GitHub
-diff open: user.vscode("pr.openDiffView")
+diff open: user.vscode("git.viewChanges")
 
 diff next:
     # key(alt-f5)
