@@ -42,8 +42,7 @@ tab move last: user.vscode("workbench.action.moveEditorToLastGroup")
 tab hunt: user.vscode("workbench.action.showAllEditors")
 
 # GitHub
-diff open: user.vscode("")
-
+dock open: key(shift-cmd-ctrl-f12)
 
 diff next:
     # key(alt-f5)
@@ -61,6 +60,7 @@ git diff:
 (wreck | rec) make: user.vscode("pr.create")
 (wreck | rec) show: user.vscode("prStatus:github.focus")
 (wreck | rec) diff: user.vscode("pr.openDiffView")
+
 (wreck | rec) next: user.vscode("pr.goToNextDiffInPr")
 (wreck | rec) last: user.vscode("pr.goToPreviousDiffInPr")
 (wreck | rec) (scene | seen): user.vscode_and_wait("pr.markFileAsViewed")
