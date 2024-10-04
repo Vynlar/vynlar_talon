@@ -42,24 +42,26 @@ tab move last: user.vscode("workbench.action.moveEditorToLastGroup")
 tab hunt: user.vscode("workbench.action.showAllEditors")
 
 # GitHub
+diff open: user.vscode("pr.openDiffView")
+
 diff next:
     # key(alt-f5)
-    user.run_rpc_command("editor.action.marker.nextInFiles")
+    user.vscode("editor.action.marker.nextInFiles")
 
 diff next all:
-    user.run_rpc_command("editor.action.accessibleDiffViewer.next")
+    user.vscode("editor.action.accessibleDiffViewer.next")
 
 diff last:
     key(shift-alt-f5)
 
 problem next:
-    user.run_rpc_command("editor.action.marker.next")
+    user.vscode("editor.action.marker.next")
 
 problem next all:
-    user.run_rpc_command("editor.action.marker.nextInFiles")
+    user.vscode("editor.action.marker.nextInFiles")
 
 problem last:
-    user.run_rpc_command("editor.action.marker.prev")
+    user.vscode("editor.action.marker.prev")
 
 diff comment: user.vscode("pr.addFileComment")
 slot {self.letter} [{self.letter}]:
