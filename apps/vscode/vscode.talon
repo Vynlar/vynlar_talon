@@ -43,10 +43,11 @@ tab hunt: user.vscode("workbench.action.showAllEditors")
 
 # GitHub
 diff next:
-    key(alt-f5)
+    # key(alt-f5)
+    user.run_rpc_command("editor.action.marker.nextInFiles")
 
 diff next all:
-    key(shift-alt-f5)
+    user.run_rpc_command("editor.action.accessibleDiffViewer.next")
 
 diff last:
     key(shift-alt-f5)
