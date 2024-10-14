@@ -54,6 +54,9 @@ diff last:
 git diff:
     user.vscode("git.openChange")
 
+# While viewing a diff stage the currently selected chunk
+git stage chunk: user.vscode("git.diff.stageHunk")
+
 dock open: key(shift-cmd-ctrl-f12)
 (wreck | rec) make: user.vscode("pr.create")
 (wreck | rec) show: user.vscode("prStatus:github.focus")
