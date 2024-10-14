@@ -1,4 +1,4 @@
 Spoken form, VSCode command
 copy link,issue.copyGithubPermalink
 copy markdown link,issue.copyMarkdownGithubPermalink
-stage,git.stageChange
+stage,git.diff.stageHunk
