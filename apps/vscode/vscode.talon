@@ -54,8 +54,6 @@ diff last:
 git diff:
     user.vscode("git.openChange")
 
-git open: user.vscode("git.openFile")
-
 dock open: key(shift-cmd-ctrl-f12)
 (wreck | rec) make: user.vscode("pr.create")
 (wreck | rec) show: user.vscode("prStatus:github.focus")
