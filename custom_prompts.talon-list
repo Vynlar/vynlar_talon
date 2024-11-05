@@ -1,0 +1,4 @@
+list: user.customPrompt
+-
+
+fix grammar casual: Fix any mistakes or irregularities in grammar, spelling, or formatting. Use a casual tone appropriate for a friendly Slack message. The text was created using voice dictation. Thus, there are likely to be issues regarding homophones and other misrecognitions. Do not change the tone. Do not change the original structure of the text. Do not wrap the output in quotes.
