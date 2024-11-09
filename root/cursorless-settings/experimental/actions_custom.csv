@@ -3,3 +3,4 @@ copy link,issue.copyGithubPermalink
 copy markdown link,issue.copyMarkdownGithubPermalink
 stage,git.stageSelectedRanges
 unstage,git.unstageSelectedRanges
+run top,calva.evaluateCurrentTopLevelForm
