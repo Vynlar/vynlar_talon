@@ -3,7 +3,29 @@ mode: command
 -
 
 bar GitHub: user.vscode("pr:github.focus")
-bar copilot: user.vscode("a.panel.chat.view.copilot.focus")
+pilot switch: user.vscode("workbench.action.toggleAuxiliaryBar")
+pilot edit: user.vscode("workbench.action.chat.openEditSession")
+
+panel debug: user.vscode("workbench.panel.repl.view.focus")
+
+debug pick: user.vscode("workbench.action.debug.selectandstart")
+debug test [file]:
+    user.vscode("workbench.action.debug.selectandstart")
+    sleep(50ms)
+    insert("current file")
+    key("enter")
+
+debug command:
+    user.vscode("workbench.action.debug.selectandstart")
+    sleep(50ms)
+    insert("command")
+    key("enter")
+
+debug (web|server):
+    user.vscode("workbench.action.debug.selectandstart")
+    sleep(50ms)
+    insert("web")
+    key("enter")
 
 # Symbol search
 symbol hunt [<user.text>]:
@@ -78,7 +100,12 @@ slot {self.letter} [{self.letter}]:
     user.run_rpc_command("andreas.focusTab", "{letter_1}{letter_2 or ''}")
 
 downer: user.vscode("extension.smoothscroll_scrollDown")
+downer all: 
+    user.vscode("scrollEditorBottom")
 upper: user.vscode("extension.smoothscroll_scrollUp")
+upper all: 
+    user.vscode("scrollEditorTop")
+
 
 # merge conflicts
 accept incoming: user.vscode("merge-conflict.accept.incoming")
@@ -100,3 +127,9 @@ search (previous | last): user.vscode("search.action.focusPreviousSearchResult")
 
 # Swap between the visible tabs
 swapper: user.vscode("workbench.action.focusNextGroup")
+
+docker up: user.vscode("vscode-docker.compose.up")
+docker down: user.vscode("vscode-docker.compose.down")
+
+terminal kill: user.vscode("workbench.action.terminal.kill")
+terminal rename: user.vscode("workbench.action.terminal.rename")

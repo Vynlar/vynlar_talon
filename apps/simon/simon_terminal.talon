@@ -32,6 +32,9 @@ simon run local:
 simon run prod:
     insert("simon-docker run prod ./manage.py ")
 
+simon unit test:
+    insert("simon-docker unit-tests ")
+
 amazon login:
     insert("aws sso login")
     key(enter)
