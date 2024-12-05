@@ -1,6 +1,6 @@
-coder: user.switcher_focus_window_by_name("Code", "— web")
-coder talon: user.switcher_focus_window_by_name("Code", "— talon")
-notes: user.switcher_focus_window_by_name("Code", "— dendron")
+coder: user.switcher_focus_window_by_name("Code", "app:[web]")
+coder talon: user.switcher_focus_window_by_name("Code", "app:[.talon]")
+notes: user.switcher_focus_window_by_name("Code", "app:[dendron]")
 portal: user.switcher_focus("firefox")
 term: user.switcher_focus("iTerm2")
 slacker:
