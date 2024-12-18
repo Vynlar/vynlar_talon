@@ -21,7 +21,7 @@ debug command:
     insert("command")
     key("enter")
 
-debug (web|server):
+debug (web | server):
     user.vscode("workbench.action.debug.selectandstart")
     sleep(50ms)
     insert("web")
@@ -51,7 +51,7 @@ hunt all:
 
 # Workspaces
 project open: key("cmd-o")
-project open recent: user   .vscode("workbench.action.openRecent")
+project open recent: user.vscode("workbench.action.openRecent")
 
 close tabs right: user.vscode("workbench.action.closeEditorsToTheRight")
 close tabs left: user.vscode("workbench.action.closeEditorsToTheLeft")
@@ -100,12 +100,11 @@ slot {self.letter} [{self.letter}]:
     user.run_rpc_command("andreas.focusTab", "{letter_1}{letter_2 or ''}")
 
 downer: user.vscode("extension.smoothscroll_scrollDown")
-downer all: 
+downer all:
     user.vscode("scrollEditorBottom")
 upper: user.vscode("extension.smoothscroll_scrollUp")
-upper all: 
+upper all:
     user.vscode("scrollEditorTop")
-
 
 # merge conflicts
 accept incoming: user.vscode("merge-conflict.accept.incoming")
