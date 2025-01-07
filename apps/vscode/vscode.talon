@@ -5,6 +5,7 @@ mode: command
 bar GitHub: user.vscode("pr:github.focus")
 pilot switch: user.vscode("workbench.action.toggleAuxiliaryBar")
 pilot edit: user.vscode("workbench.action.chat.openEditSession")
+pilot chat: user.vscode("workbench.panel.chat.view.copilot.focus")
 
 panel debug: user.vscode("workbench.panel.repl.view.focus")
 

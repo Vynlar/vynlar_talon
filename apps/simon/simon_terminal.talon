@@ -54,3 +54,7 @@ start storybook:
 start colima:
     insert("colima start --memory 10 --cpu 3 --vm-type vz --mount-type virtiofs")
     key(enter)
+
+git fetch develop:
+    insert("git fetch origin develop:develop")
+    key(enter)

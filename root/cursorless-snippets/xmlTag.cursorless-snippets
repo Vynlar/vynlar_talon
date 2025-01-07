@@ -9,17 +9,20 @@
           ]
         },
         "body": [
-          "<$tagName>$body</$tagName>"
+          "<$tagName $attributes>$body</$tagName>"
         ]
       }
     ],
     "description": "A tag with children",
     "variables": {
       "tagName": {
-        "formatter": "pascalCase" 
+        "formatter": "pascalCase"
       },
+      "attributes": {},
       "body": {}
     },
-    "insertionScopeTypes": ["xmlElement"]
+    "insertionScopeTypes": [
+      "xmlElement"
+    ]
   }
 }
