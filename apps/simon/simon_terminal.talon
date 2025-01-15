@@ -2,6 +2,10 @@ tag: terminal
 
 -
 
+simon docker login:
+    insert("simon-docker login")
+    key(enter)
+
 start frontend:
     insert("npm run dev-server-docker")
     key(enter)
@@ -15,7 +19,7 @@ start backend:
     key(enter)
 
 start colima:
-    insert("colima start --memory 10 --cpu 3 --vm-type vz --mount-type virtiofs")
+    insert("colima start --memory 16 --cpu 4 --vm-type vz --mount-type virtiofs")
     key(enter)
 
 simon shell prod:
@@ -49,10 +53,6 @@ start playwright [local]:
 
 start storybook:
     insert("npm run storybook")
-    key(enter)
-
-start colima:
-    insert("colima start --memory 10 --cpu 3 --vm-type vz --mount-type virtiofs")
     key(enter)
 
 git fetch develop:
