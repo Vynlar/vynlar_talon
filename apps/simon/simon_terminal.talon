@@ -36,6 +36,9 @@ simon run local:
 simon run prod:
     insert("simon-docker run prod ./manage.py ")
 
+simon run rq:
+    insert("simon-docker run dev python manage.py rqworker ")
+
 simon unit test:
     insert("simon-docker unit-tests ")
 
