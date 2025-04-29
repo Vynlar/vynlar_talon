@@ -40,7 +40,8 @@ symbol hunt all [<user.text>]:
     insert(text or "")
 
 scout all [<user.text>]:
-    user.vscode("workbench.action.findInFiles")
+    user.vscode("find-it-faster.findWithinFiles")
+    # user.vscode("workbench.action.findInFiles")
     sleep(50ms)
     insert(text or "")
 
