@@ -56,17 +56,6 @@ os: mac
 app: vscode
 """
 
-@ctx.action_class("app")
-class AppActions:
-    # talon app actions
-    def scroll_down(repeat: int):
-        for i in range(repeat):
-            actions.user.vscode("extension.smoothscroll_scrollDown")
-
-    def scroll_up(repeat: int):
-        for i in range(repeat):
-            actions.user.vscode("extension.smoothscroll_scrollUp")
-
 @mod.action_class
 class AppActions:
     def lookup_daily_note():
