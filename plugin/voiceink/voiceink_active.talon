@@ -5,7 +5,7 @@ parrot(alveolar_click):
     mode.disable("user.voiceink")
     mode.enable("command")
 
-cancel voice ink:
+cancel chatter:
     key(escape escape)
     mode.disable("user.voiceink")
     mode.enable("command")

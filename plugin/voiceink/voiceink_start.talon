@@ -1,6 +1,6 @@
 mode: command
 -
-voice ink:
+chatter:
     mode.disable("command")
     mode.enable("user.voiceink")
     key(alt-shift-space)
